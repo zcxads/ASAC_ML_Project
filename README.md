@@ -1,7 +1,15 @@
 # Employee Attrition Predict Project
 
-## Introduction
-In this project, we will address the task of binary classification using a tabular dataset related to employee attrition. The goal is to build a machine learning model that predicts whether an employee is likely to leave (attrition) or stay within the organization based on various features and historical data.
+## Introduction:
+
+I had the opportunity to participate in the Kaggle competition titled "Binary Classification with a Tabular Employee Attrition Dataset.
+
+This competition focused on predicting employee attrition based on a tabular dataset containing various employee-related features. It provided an exciting challenge to develop and fine-tune machine learning models to help organizations understand and mitigate the risk of employee turnover.
+
+Participating in Kaggle competitions like this one allows data scientists and machine learning practitioners to sharpen their skills, learn from the global data science community, and tackle complex real-world problems. It's a valuable opportunity for professional development and networking with like-minded individuals passionate about data analysis and predictive modeling.
+
+![image](https://github.com/zcxads/ASAC_ML_Project/assets/96506354/7f1dcb9a-885a-4f04-bb45-62f7d5c0d8ce)
+
 
 ## Dataset Description
 The dataset contains the following features:
