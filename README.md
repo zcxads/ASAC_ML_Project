@@ -8,8 +8,7 @@ This competition focused on predicting employee attrition based on a tabular dat
 
 Participating in Kaggle competitions like this one allows data scientists and machine learning practitioners to sharpen their skills, learn from the global data science community, and tackle complex real-world problems. It's a valuable opportunity for professional development and networking with like-minded individuals passionate about data analysis and predictive modeling.
 
-![image](https://github.com/zcxads/ASAC_ML_Project/assets/96506354/7f1dcb9a-885a-4f04-bb45-62f7d5c0d8ce)
-
+![image](https://github.com/zcxads/ASAC_ML_Project/assets/96506354/cb1fa0d1-a1d0-4a8a-82f5-ef50b003f329)
 
 ## Dataset Description
 The dataset contains the following features:
