@@ -75,9 +75,5 @@ Model Training:
 
 Interpret the model results: Analyze the model's coefficients (for linear models like Logistic Regression) or feature importances (for tree-based models) to understand which factors contribute the most to employee attrition predictions. This interpretation can offer valuable insights for HR and management.
 
-6. Deployment:
-
-If the model meets the performance criteria: If the model satisfies predefined performance criteria and demonstrates reliable predictions, it can be deployed for real-world use. This typically involves integrating the model into an operational system or workflow to make attrition predictions for new employee data.
-
 ## Conclusion
 By following these steps, we aim to develop a robust binary classification model that can accurately predict employee attrition. This model can be valuable for HR departments and organizations to proactively address attrition-related issues and improve employee retention.
