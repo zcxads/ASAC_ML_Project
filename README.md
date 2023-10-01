@@ -1,6 +1,6 @@
 # Employee Attrition Predict Project
 
-## Introduction:
+## Introduction
 
 I had the opportunity to participate in the Kaggle competition titled "Binary Classification with a Tabular Employee Attrition Dataset.
 
@@ -10,41 +10,6 @@ Participating in Kaggle competitions like this one allows data scientists and ma
 
 ![image](https://github.com/zcxads/ASAC_ML_Project/assets/96506354/cb1fa0d1-a1d0-4a8a-82f5-ef50b003f329)
 
-## Dataset Description
-The dataset contains the following features:
-
-- Education: Highest level of education attained by the individual.
-- Education Field: Field or area of study for the individual's education.
-- Marital Status: Marital status of the individual.
-- Num Companies Worked: Number of companies the individual has worked for.
-- Total Working Years: Total number of years the individual has worked in their career.
-
-- Employee Number: Unique identification number for each employee.
-- Training Time Last Year: Number of hours of training the employee received in the last year.
-- Years at Company: Number of years the employee has been with the current company.
-- Years in Current Role: Number of years the employee has been in their current role.
-- Years since last Promotion: Number of years since the employee's last promotion.
-
-- Daily Rate: The daily pay rate or salary of the employee.
-- Hourly Rate: The hourly pay rate or salary of the employee.
-- Monthly Income: The monthly income or salary of the employee.
-- Monthly Rate: A monthly rate or salary-related metric.
-- Stock Option Level: Level of stock options granted to the employee.
-- Percent Salary Hike: The percentage increase in salary or wage.
-
-- Department: The department within the company where the employee works.
-- Business Travel: Frequency or nature of business-related travel undertaken by the employee.
-- Distance from Home: The distance between the employee's home and the workplace.
-- Job Level (1~5): The level or rank of the employee's job within the company (typically ranging from 1 to 5).
-- Overtime: Whether the employee works overtime or not.
-- Performance Rating: The employee's performance rating.
-- Years with Current Manager: The number of years the employee has worked under the current manager.
-
-- Environment Satisfaction: The level of satisfaction the employee has with their work environment.
-- Job Involvement: The degree to which the employee is involved and engaged in their job.
-- Job Satisfaction: The overall satisfaction the employee feels with their job.
-- Relationship Satisfaction: The satisfaction level in terms of work-related relationships.
-- Work-Life Balance: How balanced the employee perceives their work and personal life.
 
 ## Methodology
 Our approach to solving this binary classification problem involves the following steps:
