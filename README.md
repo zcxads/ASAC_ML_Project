@@ -2,50 +2,41 @@
 
 ## Introduction
 
-I had the opportunity to participate in the Kaggle competition titled "Binary Classification with a Tabular Employee Attrition Dataset.
-
-This competition focused on predicting employee attrition based on a tabular dataset containing various employee-related features. It provided an exciting challenge to develop and fine-tune machine learning models to help organizations understand and mitigate the risk of employee turnover.
-
-Participating in Kaggle competitions like this one allows data scientists and machine learning practitioners to sharpen their skills, learn from the global data science community, and tackle complex real-world problems. It's a valuable opportunity for professional development and networking with like-minded individuals passionate about data analysis and predictive modeling.
-
 ![image](https://github.com/zcxads/ASAC_ML_Project/assets/96506354/cb1fa0d1-a1d0-4a8a-82f5-ef50b003f329)
 
 
 ## Methodology
-Our approach to solving this binary classification problem involves the following steps:
+이진 분류 문제를 해결하기 위한 우리의 접근 방식은 다음과 같습니다:
 
 1. Data Preprocessing:
+- 결측값 처리(있을 경우): 데이터셋에서 결측값을 식별하고 처리하는 것으로 시작합니다. 적절한 기술(평균, 중앙값, 최빈값 등)로 결측값을 대체하거나, 결측값이 많은 행 또는 열을 제거하는 방법을 사용할 수 있습니다.
 
-- Handle missing values (if any): Begin by identifying and addressing missing values in the dataset. This may involve imputing missing values with appropriate techniques like mean, median, or mode, or removing rows or columns with significant missing data.
+- 범주형 변수 인코딩: 범주형 변수(예: "교육 분야," "성별")는 머신러닝 알고리즘에서 처리할 수 있도록 수치 형식으로 변환해야 합니다. 일반적인 인코딩 방법으로는 각 범주를 이진 열로 변환하는 원-핫 인코딩이나, 범주를 정수 레이블로 대체하는 라벨 인코딩이 있습니다.
 
-- Encode categorical variables: Categorical variables (e.g., "Education Field," "Gender") need to be converted into numerical format for machine learning algorithms to process. Common encoding methods include one-hot encoding, where each category becomes a binary column, or label encoding, where categories are replaced with integer labels.
-
-- Split the dataset into training and testing sets: To assess the model's performance, divide the dataset into two subsets: a training set (typically 80% of the data) used to train the model and a testing set (remaining 20%) used to evaluate its performance. This separation ensures that the model's accuracy can be tested on unseen data.
+- 데이터셋을 학습용과 테스트용으로 분리: 모델의 성능을 평가하기 위해 데이터셋을 두 개의 하위 집합으로 나눕니다. 학습용 데이터(일반적으로 전체의 80%)는 모델을 훈련시키는 데 사용되고, 나머지 테스트용 데이터(20%)는 모델 성능을 평가하는 데 사용됩니다. 이를 통해 모델의 정확도를 확인할 수 있습니다.
 
 2. Feature Selection and Engineering:
+- 특징 중요도 분석: 트리 기반 모델(예: 랜덤 포레스트)의 특징 중요도 점수, 상관관계 분석 또는 도메인 지식을 사용하여 직원 이직을 예측하는 데 가장 중요한 특징을 파악합니다. 중요도가 높은 특징은 모델링에 유지됩니다.
 
-- Analyze feature importance: Utilize techniques like feature importance scores from tree-based models (e.g., Random Forest), correlation analysis, or domain knowledge to determine which features are most relevant for predicting employee attrition. Features with high importance are retained for modeling.
-
-- Create new features if needed: If domain knowledge suggests that certain combinations of existing features or new derived features could improve predictive power, engineer these new features. This might involve mathematical operations or aggregations of existing variables.
+- 필요에 따라 새로운 특징 생성: 도메인 지식에 따라 기존 특징들의 조합 또는 새로운 파생 특징이 예측력을 향상시킬 수 있다고 판단되면 새로운 특징을 생성합니다. 이는 기존 변수를 수학적으로 조작하거나 집계하는 방식일 수 있습니다.
 
 3. Model Selection:
 
-- Choose appropriate binary classification algorithms: Select suitable machine learning algorithms for binary classification. Common choices include Logistic Regression, Random Forest, Gradient Boosting (e.g., XGBoost, LightGBM), Support Vector Machines (SVM), and Neural Networks, among others. The choice should consider the dataset size, complexity, and interpretability requirements.
-Model Training:
+- 적합한 이진 분류 알고리즘 선택: 이진 분류를 위해 적절한 머신러닝 알고리즘을 선택합니다. 일반적으로 로지스틱 회귀, 랜덤 포레스트, 그라디언트 부스팅(XGBoost, LightGBM 등), 서포트 벡터 머신(SVM), 신경망 등이 선택됩니다. 선택은 데이터셋의 크기, 복잡성, 해석 가능성 등의 요구사항을 고려해야 합니다.
 
-- Train the selected models on the training dataset: Fit the chosen classification models to the training data. The models learn patterns and relationships between input features and the target variable (employee attrition) during this training phase.
+4. Model Training:
 
-- Perform hyperparameter tuning: Optimize the model's performance by adjusting hyperparameters (e.g., learning rates, tree depths, regularization parameters) through techniques like grid search or random search. This process fine-tunes the model's behavior.
+- 선택된 모델을 학습용 데이터셋으로 학습: 선택한 분류 모델을 학습 데이터에 맞춥니다. 모델은 이 학습 과정에서 입력 특징과 목표 변수(직원 이직) 간의 패턴과 관계를 학습합니다.
 
-4. Model Evaluation:
+- 하이퍼파라미터 튜닝: 그리드 서치 또는 랜덤 서치와 같은 기술을 통해 학습률, 트리 깊이, 정규화 파라미터 등 하이퍼파라미터를 조정하여 모델 성능을 최적화합니다. 이를 통해 모델의 성능을 미세 조정합니다.
 
-- Evaluate model performance: Use appropriate evaluation metrics such as accuracy, precision, recall, F1-score, and ROC AUC to assess how well the model performs on the testing dataset. These metrics provide insights into the model's ability to correctly classify employees as churners or non-churners.
+5. Model Evaluation:
 
-- Use confusion matrices: Create confusion matrices to gain a deeper understanding of model predictions. This helps in identifying false positives, false negatives, true positives, and true negatives, which can inform decision-making.
+- 모델 성능 평가: 정확도, 정밀도, 재현율, F1-점수, ROC AUC 등의 적절한 평가 지표를 사용하여 테스트 데이터셋에서 모델이 얼마나 잘 작동하는지 평가합니다. 이러한 지표는 직원 이직 여부를 정확하게 분류하는 모델의 능력을 보여줍니다.
 
-5. Model Interpretation:
+- 혼동 행렬 사용: 혼동 행렬을 만들어 모델 예측을 더 깊이 분석합니다. 이를 통해 거짓 긍정, 거짓 부정, 참 긍정, 참 부정을 파악하여 의사결정에 도움이 됩니다.
 
-Interpret the model results: Analyze the model's coefficients (for linear models like Logistic Regression) or feature importances (for tree-based models) to understand which factors contribute the most to employee attrition predictions. This interpretation can offer valuable insights for HR and management.
+6. Model Interpretation:
 
-## Conclusion
-By following these steps, we aim to develop a robust binary classification model that can accurately predict employee attrition. This model can be valuable for HR departments and organizations to proactively address attrition-related issues and improve employee retention.
+- 모델 결과 해석: 로지스틱 회귀와 같은 선형 모델의 계수 또는 트리 기반 모델의 특징 중요도를 분석하여 직원 이직 예측에 가장 크게 기여하는 요인이 무엇인지 파악합니다. 이러한 해석은 인사 및 경영진에게 유용한 통찰을 제공할 수 있습니다.
+
